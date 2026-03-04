@@ -57,12 +57,13 @@
       font-size: 0.7rem; font-weight: 700; letter-spacing: 4px;
       padding: 5px 14px; border-radius: 30px; margin-bottom: 16px;
     }
-    .hero h1 {
-      font-size: clamp(2rem, 6vw, 3.6rem);
-      font-weight: 900; letter-spacing: 6px; line-height: 1.1;
-      background: linear-gradient(90deg, #b8860b 0%, #f5c518 30%, #fff8dc 50%, #f5c518 70%, #b8860b 100%);
-      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    .hero-logo {
+      height: clamp(60px, 10vw, 110px);
+      width: auto;
       margin-bottom: 8px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
     .hero-sub { color: var(--muted); font-size: 0.9rem; letter-spacing: 2.5px; margin-bottom: 4px; }
     .hero-date {
@@ -285,7 +286,7 @@
 <div class="hero">
   <div class="hero-inner">
     <div class="hero-badge">2025 - 2026 Season</div>
-    <h1>M LEAGUE</h1>
+    <img src="https://m-league.jp/assets/media/img/common/logo-row.svg" alt="M.LEAGUE" class="hero-logo">
     <div class="hero-sub">レギュラーシーズン 個人成績 &amp; ドラフトチーム &amp; 推移グラフ</div>
     <div class="hero-date">
       <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">

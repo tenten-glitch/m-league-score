@@ -58,15 +58,13 @@
       border-radius: 30px;
       margin-bottom: 14px;
     }
-    .hero h1 {
-      font-size: clamp(1.6rem, 5vw, 3rem);
-      font-weight: 900;
-      letter-spacing: 5px;
-      background: linear-gradient(90deg, #b8860b 0%, #f5c518 30%, #fff8dc 50%, #f5c518 70%, #b8860b 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
+    .hero-logo {
+      height: clamp(50px, 8vw, 90px);
+      width: auto;
       margin-bottom: 8px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
     .hero-sub { color: var(--muted); font-size: 0.9rem; letter-spacing: 2px; }
 
@@ -271,7 +269,7 @@
 <div class="hero">
   <div class="hero-inner">
     <div class="hero-badge">2025 - 2026 Season</div>
-    <h1>DRAFT CHART</h1>
+    <img src="https://m-league.jp/assets/media/img/common/logo-row.svg" alt="M.LEAGUE" class="hero-logo">
     <div class="hero-sub">ドラフトチーム PT・収支 推移グラフ</div>
   </div>
 </div>
