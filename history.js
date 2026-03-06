@@ -292,12 +292,12 @@ window.MLEAGUE_HISTORY = [
   },
   {
     "date": "3/6",
-    "ten_pt": 445.2,
+    "ten_pt": 541,
     "aji_pt": -752.9,
-    "sat_pt": 49.8,
-    "ten_bk": 1593.5,
-    "aji_bk": -2000.8,
-    "sat_bk": 407.3
+    "sat_pt": 19.3,
+    "ten_bk": 1815.6,
+    "aji_bk": -2066.1,
+    "sat_bk": 250.5
   }
 ];
 window.MLEAGUE_HISTORY_UPDATED = "2026/03/06";
