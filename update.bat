@@ -1,36 +1,29 @@
 @echo off
-chcp 65001 > nul
-title Mリーグ成績表 自動更新
+set "NODE_PATH=C:\Program Files\nodejs"
+set "PATH=%PATH%;%NODE_PATH%"
 cd /d "%~dp0"
 
 echo ====================================
-echo   Mリーグ成績表 自動更新ツール
+echo   M-League Score Updater
 echo ====================================
 echo.
 
-:: Node.js チェック
-node --version > nul 2>&1
+"%NODE_PATH%\node.exe" --version > nul 2>&1
 if %errorlevel% neq 0 (
-  echo [エラー] Node.js がインストールされていません。
-  echo.
-  echo 以下のサイトから Node.js をインストールしてください:
-  echo   https://nodejs.org/ja/
-  echo.
+  echo [ERROR] Node.js not found at %NODE_PATH%
   pause
   exit /b 1
 )
 
-:: スクレイパー実行
-node scrape.js
+"%NODE_PATH%\node.exe" scrape.js
 
 if %errorlevel% == 0 (
   echo.
-  echo ブラウザで index.html を開きます...
+  echo Opening index.html ...
   start "" "%~dp0index.html"
 ) else (
   echo.
-  echo [エラー] 更新に失敗しました。
-  echo 上のエラーメッセージを確認してください。
+  echo [ERROR] scrape.js failed.
 )
 
 echo.
