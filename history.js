@@ -1,6 +1,6 @@
 // Mリーグ ドラフトチーム 履歴データ（自動生成 - scrape.js が更新します）
 // 収支 = 2×自PT − 他2チームPT の合計
-// 更新日時: 2026/03/10
+// 更新日時: 2026/03/12
 window.MLEAGUE_HISTORY = [
   {
     "date": "12/9",
@@ -316,6 +316,15 @@ window.MLEAGUE_HISTORY = [
     "ten_bk": 1973.9,
     "aji_bk": -2126.2,
     "sat_bk": 152.3
+  },
+  {
+    "date": "3/12",
+    "ten_pt": 582.3,
+    "aji_pt": -779.4,
+    "sat_pt": -96.8,
+    "ten_bk": 2040.8,
+    "aji_bk": -2044.3,
+    "sat_bk": 3.5
   }
 ];
-window.MLEAGUE_HISTORY_UPDATED = "2026/03/10";
+window.MLEAGUE_HISTORY_UPDATED = "2026/03/12";
